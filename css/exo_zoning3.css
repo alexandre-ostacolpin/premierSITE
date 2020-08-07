@@ -1,0 +1,22 @@
+body {
+    background-color: gold;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+}
+
+header h1 {
+    background-color: hotpink;
+    height: 500px;
+    text-align: left;
+}
+
+header h2 {
+    text-align: right;
+}
+
+aside {
+
+}
