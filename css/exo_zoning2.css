@@ -1,0 +1,50 @@
+body {
+    background-color: white;
+}
+
+main {
+    width: 1200px;
+    background-color: pink;
+    margin: auto;
+}
+
+header {
+    background-color: pink;
+    float: left;
+    width: 1200px;
+    text-align: center;
+    height: 150px;
+    color: white;
+}
+
+aside {
+    background-color: greenyellow;
+    width: 200px;
+    float: left;
+    text-align: center;
+    min-height: 500px;
+    color: white;
+}
+
+section {
+    background-color: gold;
+    width: 800px;
+    float: left;
+    text-align: center;
+    min-height: 500px;
+    color: white;
+}
+
+span {
+    background-color: greenyellow;
+    width: 200px;
+    float: left;
+    text-align: center;
+    min-height: 500px;
+    color: white;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}

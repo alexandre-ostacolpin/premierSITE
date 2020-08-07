@@ -1,0 +1,33 @@
+body {
+    background-color: gold;
+    color: white;
+    font-size: 1.8em;
+}
+
+#zoning2 {
+    width: 1200px;
+    margin: auto;
+}
+
+#zoning2 header {
+    background-color: hotpink;
+    height: 200px;
+}
+
+#zoning2 aside {
+    background-color: olive;
+    width: 200px;
+    float: left;
+    height: 400px;
+}
+
+#zoning2 .milieu {
+    width: 800px;
+    background-color: orange;
+    float: left;
+    height: 400px;
+}
+
+footer {
+    background-color: palegreen;
+}

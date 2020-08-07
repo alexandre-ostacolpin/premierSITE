@@ -1,0 +1,30 @@
+body {
+    background: pink;
+}
+
+#main{
+    margin: 200px;
+
+}
+
+#centre {
+    background-color: orange;
+    text-align: center;
+    height: 300px;
+}
+
+#gauche {
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    background-color: greenyellow;
+    float: left;
+}
+
+#droite {
+    width: 80%;
+    height: 300px;
+    text-align: center;
+    background-color: grey;
+    float: left;
+}

@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+/* reset simple  */
+/* l'étoile signifie tout all */
+/* tous les éléments sont "tailleés" de façon plus intuitive. ils conserveront la taille que nous leur donnons */
+
+*{
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Mes style pour le premierSITE : Alexandre Osta-Col-Pin - Colombbus */
+
+/* font-family: 'Anton', sans-serif;
+
+font-family: 'Lemonada', cursive;
+
+font-family: 'Oswald', sans-serif; */
+
+body {
+	background-image: url(../img/img/img/concrete-texture.png);
+	font-family: 'Oswald', sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+
+h1 {
+	font-size: 35px;
+	color: #2980b9;
+	text-align: center;
+	letter-spacing: 10px;
+	font-family: Anton, sans-serif;
+}
+
+h2 {
+	font-size: 35px;
+	color: #2c3e50;
+	padding: 20px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #aaa;
+}
+
+h2 i {
+	color: #09c;
+	font-size: 150%;
+}
+
+h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    padding: 15px;
+    text-shadow: 1px 1px 2px #aaa;
+}
+h4 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+strong {
+	font-weight: bold;
+}
+/* à compléter */
+
+/* style pour header */
+
+header {
+	height: 175px;
+	background: #2c3e50;
+}
+
+#logo {
+	float: left;
+	width: 25%;
+	background: #2c3e50;
+	padding: 15px;
+	text-align: center;
+}
+
+#slogan {
+	float: left;
+	width: 50%;
+	background: #2c3e50;
+	padding-top: 50px;
+}
+
+/* Les style pour les icône d'insta et de facebook  */
+#social {
+	float: left;
+	width: 25%;
+}
+
+#social i {
+	/* background: #2c3e50; */
+	/* background: red; */
+	font-size: 30px;
+	text-align: right;
+	padding: 15px 30px 0 0;
+}
+
+header a {
+	text-decoration: none;
+	color: #10828c;
+}
+
+/* Fin de header  */
+
+/* nav navigation  */
+
+nav {
+	background: #2980b9;
+	height: 70px;
+	border-bottom: 8px solid #6acafc;
+	text-align: center;
+	padding: 15px;
+}
+
+nav a {
+	background: #6acafc;
+	margin: 10px;
+	padding: 2px 10px;
+	border-radius: 10px 0;
+	border: 2px solid #fff;
+	color: #2c3e50;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Oswald, sans-serif;
+	/* Contrôle la durée en secondes ou en milli-secondes de la transition avec le speudo classe .hover  */
+	transition: 0.5s; 
+	/* transition sur le a marche avec le :hover */
+}
+
+nav a:hover {
+	color: #fff;
+	background: #a6d6c3;
+}
+
+.activ {
+	color: orangered;
+	background: #a6d6c3;
+}
+
+/* Les zone principales de la page et du site  */
+
+main {
+	background: rgba(178, 178, 178, 0.178);
+	width: 1000px;
+	margin: 0 auto;
+}
+
+aside {
+	height: 250px;
+	background: #a6d6c3;
+	width: 30%;
+	float: left;
+}
+
+#accueil {
+	float: left;
+	width: 70%;
+	/* padding: 10px; */
+}
+
+section {
+	margin-top: 10px;
+	padding: 20px;
+}
+
+footer {
+	/* min-height: 100px; */
+	height: 30px;
+	background: #2980b9;
+	margin-top: 10px;
+}
+
+/* Fin des zones principales  */
+
+/* Le bouton pour aller en haut de page  */
+
+button {
+	font-size: 350%;
+	background: transparent;
+	border: none;
+	color: #2c3e50;
+	/* La position du bouton  */
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+}
+
+/* à completer éventuellement  */
+
+/* fin boutton */
+
+/* style de la page texte  */
+
+.citation {
+	font: 20px 'Lemonada', cursive;
+}
+
+h2 i {
+	color: #2980b9;
+	font-size: 50px;
+}
+
+blockquote i {
+	color: #6acafc;
+	font-size: 350%;
+	/* vertical-align: middle; */
+}
+
+blockquote i, blockquote p {
+	vertical-align: middle;
+}
+
+/* début page des images  */
+
+.imageFond {
+	background: url(../img/img/img/fond.jpg) no-repeat;
+	background-size: cover;
+}
+
+.imageFond p {
+	/* L'image apparaît car le p à une marge extérieur très grande  */
+	width: 75%;
+	margin: 200px auto 250px auto;
+	padding: 20px;
+	/* rgba alpha = transparance  */
+	background: rgba(255, 255, 255, 0.60);
+	border-radius: 10px;
+	font-size: 120%;
+}
+
+/* On cible une seule imgae avec son chemin relatif depuis la page HTML  */
+
+img[src="img/img/img/toureiffel.jpg"] {
+	margin: auto;
+	display: block;
+	padding: 30px;
+	background: #fff;
+}
+
+.auCentre {
+	text-align: center;
+}
+
+.imageGolden {
+	margin: 20px;
+	border: 5px solid #fff;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+	/* Transition durée qui fonctionnera avec le :hover et transform  */
+	transition: 1s;
+}
+
+/* effet d'animation  */
+
+.imageGolden:hover {
+	transform: rotate(-7deg);
+	border: 15px solid #fff;
+}
+
+.rotation360:hover {
+	/* transition 2s */
+	transform: rotate(-360deg);
+}
+
+/* Fin page des images  */
+
+
+/* La page des zonings */
+
+#zoning1 {
+    background: pink;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 1px 1px 2px white;
+}
+
+#zoning1 header {
+	height: 70px;
+	background-color: #f7f39a;
+}
+
+#zoning1 aside {
+	height: 525px;
+	width: 20%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#zoning1 section {
+	height: 525px;
+	width: 80%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+/* zoning 2 */
