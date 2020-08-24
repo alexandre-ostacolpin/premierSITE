@@ -1,22 +1,39 @@
+/* body {
+    background-color: orangered;
+} */
+
 body {
-    background-color: gold;
-}
-
-main {
-    width: 1000px;
+    width: 1200px;
     margin: auto;
+    background-image: url(../img/img/img/concrete-texture.png);
 }
 
-header h1 {
-    background-color: hotpink;
-    height: 500px;
-    text-align: left;
+.clear {
+    clear: both;
 }
 
-header h2 {
-    text-align: right;
+section {
+    width: 600px;
+    float: left;
+    background: paleturquoise;
+    text-align: center;
+    min-height: 500px;
 }
 
-aside {
+div {
+    padding: 0;
+    margin: 0;
+    height: 15px;
+    width: 1200px;
+    background-color: pink;
+}
 
+footer {
+    background-color: lightgreen;
+    text-align: center;
+    height: 50px;
+}
+
+ footer p {
+    margin: 0;
 }
