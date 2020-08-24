@@ -320,8 +320,103 @@ img[src="img/img/img/toureiffel.jpg"] {
 }
 
 /* zoning 2 */
+#zoning2 {
+	background-color: #ffd6d6;
+	width: 800px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
 
-/* a terminer  */
+#zoning2 header {
+	background-color: purple;
+	height: 70px;
+}
+
+#zoning2 aside {
+	width: 25%;
+	height: 500px;
+	float: left;
+	color: red;
+}
+
+#zoning2 .milieu {
+	background-color: #f7f39a;
+	width: 50%;
+	height: 500px;
+	float: left;
+	margin: 0;	
+}
+
+/* zoning3 */
+
+#zoning3 {
+	background: #ffd6d6;
+	width: 800px;
+	margin: auto;
+	text-align: center;
+}
+
+#zoning3 section {
+	height: 500px;
+	float: left;
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	background-color: blueviolet;
+	color: #fff;
+}
+
+#zoning3 section.orange {
+	background-color: orange;
+}
+
+#zoning3 footer {
+	height: 70px;
+	float: left;
+	width: 100%;
+	background: #d8ebb5;
+	margin: 0;
+}
+/* zoning 4 */
+#zoning4 {
+    width: 800px;
+    background-color: blue;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#zoning4 header {
+    /* width: 1200px; */
+    min-height: 100px;
+    background-color: greenyellow;
+} 
+
+#zoning4 nav {
+    background-color: crimson;
+	min-height: 50px;
+	border: none;
+}
+
+#zoning4 nav p {
+    margin: auto;
+}
+
+#zoning4 section {
+    
+    background-color: purple;
+    height: 500px;
+    margin: 20px;
+}
+
+#zoning4 footer {
+    background-color: pink;
+    height: 50px;
+}
+
+/* Zoning 5  */
+
 
 /* Page position  */
 
