@@ -1,0 +1,43 @@
+#zoning6 {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+#zoning6 header .haut_1 {
+    background-color: tomato;
+    float: left;
+    widows: 25%;
+    height: 100px;
+}
+
+#zoning6 header .haut_2 {
+    background-color: teal;
+    float: left;
+    width: 50%;
+    height: 100px;
+}
+
+#zoning6 header .haut_3 {
+    background-color: turquoise;
+    float: left;
+    width: 25%;
+    height: 100px;
+}
+
+#zoning6 .clear {
+    clear: both;
+}
+
+#zoning6 nav {
+    background: cornflowerblue;
+    height: 70px;
+    border: none;
+    width: 1000px;
+}
+
+#zoning nav p {
+    margin: 0;
+}
+

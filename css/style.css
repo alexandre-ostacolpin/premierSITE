@@ -165,7 +165,7 @@ nav a:hover {
 
 main {
 	background: rgba(178, 178, 178, 0.178);
-	width: 1000px;
+	width: 1100px;
 	margin: 0 auto;
 }
 
@@ -417,6 +417,60 @@ img[src="img/img/img/toureiffel.jpg"] {
 
 /* Zoning 5  */
 
+#zoning5 {
+	background-color: greenyellow;
+	margin: 0 auto;
+	text-align: center;
+	width: 1000px;
+}
+
+#zoning5 header {
+	height: 100px;
+	background: #be32ff;
+}
+
+#zoning5 nav {
+	height: 50px;
+	background: rgba(124, 107, 187,);
+	border-bottom: 8px solid #333;	
+}
+
+#zoning5 {
+	background: #176d81;
+	margin: 20px;
+	padding: 0;
+} 
+
+#zoning5 .section .z1, .z2, .z3, .z4 {
+	height: 250px;
+	width: 50%;
+	float: left;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 {
+	/* line-heigth = à la hauteur de l'élément si il y a un paragraphe court, qui tient sur une seule ligne  */
+	line-height: 250px;
+}
+
+#zoning5 .z1, .z4 {
+	background: #32ff32;
+}
+
+#zoning5 .z2, .z3 {
+	background: #3269ff81;
+}
+
+#zoning5 footer {
+	height: 100px;
+	background: #f8d771;
+}
+
+
+
+
+
+
+/* Fin de zoning 5 */
 
 /* Page position  */
 

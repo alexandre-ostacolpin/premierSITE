@@ -1,0 +1,26 @@
+body {
+    background-color: wheat;
+}
+/* Les couleurs pour les div  */
+.rose {
+    background-color: pink;
+}
+
+.corail {
+    background-color: lightcoral;
+}
+/* Les styles commum au div de la page  */
+.c1, .c2 {
+    height: 10em;
+    width: 10em;
+    border: 0.2em solid white;
+    float: left;
+    border-radius: 10% 5% 40% 0%;
+    margin: 1px;
+
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}

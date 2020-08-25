@@ -1,0 +1,21 @@
+body {
+    background-color: wheat;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 100px;
+    margin: 10px;
+    border: 4px solid #fff;
+    border-radius: 20px 0px 100px;
+    float: left;
+}
+
+.box_1, .box_3, .box_6, .box_8, .box_9, .box_11, .box_14, .box_16 {
+    background: pink;
+}
+
+.box_2, .box_4, .box_5, .box_7, .box_10, .box_12, .box_13, .box_15 {
+    background: tomato;
+}
