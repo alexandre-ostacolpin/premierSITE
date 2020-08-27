@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        main {
+            width: 900px;
+            min-height: 500px;
+            margin: auto;
+            background-color: #fff;
+        }
+
+        #en-tete {
+            height: 100px;
+            line-height: 100px;
+            background: ghostwhite;
+            text-align: center;
+        }
+
+        .bg-orange {
+            background-color: orange;
+            color: white;
+        }
+
+        /* div {
+            position: static;
+            left: 50px;
+            margin: 50px;
+        } */
+
+        .cercle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: orange;
+        }
+
+        q::beffore {
+            content: "";
+            color: orange;
+        }
+        
+        q::after {
+            content: "";
+            color: red;
+        }
+    </style>
+    <title>QCM - WF3</title>
+</head>
+<body>
+    <main>
+        <div id="en-tete">
+            <h1>QCM - WF3</h1>
+        </div>
+
+        <h2>Ceci est un titre 2 avec mot en italique et un fond<spam class="bg-orange">oragne</spam></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ad? Veritatis officia vitae nihil mollitia ratione sed? Consectetur tempora a facilis. Sit, rem numquam. Maiores iste in nihil! Nostrum, similique?</p>
+
+        <div class="cercle"></div>
+
+        <hr>
+
+        <q>Quelques guillemets</q>, dit-il, <q>sont mieu que pas du tout</q>
+    </main>
+    
+</body>
+</html>

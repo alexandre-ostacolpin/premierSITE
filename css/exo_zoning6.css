@@ -8,7 +8,7 @@
 #zoning6 header .haut_1 {
     background-color: tomato;
     float: left;
-    widows: 25%;
+    width: 25%;
     height: 100px;
 }
 
@@ -33,11 +33,25 @@
 #zoning6 nav {
     background: cornflowerblue;
     height: 70px;
-    border: none;
+    /* border: none; */
     width: 1000px;
 }
 
-#zoning nav p {
+#zoning6 nav p {
     margin: 0;
 }
 
+#zoning6 aside {
+    background: pink;
+    float: left;
+    width: 25%;
+    height: 300px;
+}
+
+#zoning6 section .zone_a {
+    float: left;
+}
+
+#zoning6 section .zone_b {
+    float: left;
+}

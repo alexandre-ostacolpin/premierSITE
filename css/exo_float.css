@@ -1,0 +1,21 @@
+body {
+    background: url(../img/img/img/concrete-texture.png)
+}
+
+#siamois {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: pink;
+}
+
+#siamois .boite {
+    float: left;
+    width: 500px;
+    
+    
+}
+
+.c1 {
+    border: 0.1em solid white;
+}

@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+    background: url(../img/img/img/concrete-texture.png);
+}
+
+#zoning6 {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background-color: pink;
+}
+
+#zoning6 header {
+    height: 200px;
+}
+
+.clear {
+    clear: both;
+}
+
+.haut1 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: tomato;
+}
+
+.haut2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: teal;
+}
+
+.haut3 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: turquoise;
+}
+
+#zoning6 nav {
+    height: 50px;
+    background-color: lightskyblue;
+}
+
+#zoning6 aside {
+    width: 25%;
+    height: 500px;
+    float: left;
+    background-color: thistle;
+}
+
+#zoning6 section {
+    width: 75%;
+    float: left;
+    background-color: lightgreen;
+}
+
+#zoning6 .a {
+    height: 200px;
+    width: 50%;
+    float: left;
+    background-color: wheat;
+}
+
+#zoning6 .b {
+    height: 200px;
+    width: 50%;
+    float: left;
+    background-color: black;
+}
+
+#zoning6 .diaporama {
+    height: 200px;
+    background-color: khaki;
+}
+
+#zoning6 .c {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: lime;
+}
+
+#zoning6 .d {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: powderblue;
+}
+
+#zoning6 .e {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: rosybrown;
+}
+
+#zoning6 .f {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: orchid;
+}
+
+#zoning6 footer {
+    min-height: 100px;
+    background-color: #333;
+}
+
+/* #zoning6 footer p {
+    margin: 0;
+} */
