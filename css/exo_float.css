@@ -16,6 +16,11 @@ body {
     
 }
 
-.c1 {
-    border: 0.1em solid white;
+.c1, .boite{
+    height: 220px;
+	width: 220px;
+	background-color: yellow;
+	border: 2px solid darkred;
+	margin: 20px;
+	float: left;
 }
