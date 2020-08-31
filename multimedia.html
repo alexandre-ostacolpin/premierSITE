@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mon premier site: Colombbus groupe de Suresnes">
+    <meta name="Keyword" content="html,css,Osta-Col-Pin,Alexandre,colombbus, suresmes, premier site">
+    <meta name="author" content="Alexandre Osta-Col-Pin">
+    <title>premierSITE - multimedia</title>
+    <!-- LES TYPOS -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet">
+    <!-- Les icones embarquées depuis font awesome   -->
+    <script src="https://kit.fontawesome.com/8b6862ee94.js" crossorigin="anonymous"></script>
+    <!-- Les styles du premierSITE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#logo">
+                <button type="button"><i class="fas fa-arrow-circle-up"></i></button>
+            </a>
+            <img src="img/img/img/logo.png" alt="logo premier site">
+        </div><!--fin id logo-->
+
+        <div id="slogan">
+            <a href="index.html" title="Mon premier site en HTML accueil">
+                <h1>Mon premier site en HTML5 et CSS3</h1> 
+            </a>   
+        </div><!--fin id slogan-->
+
+        <div id="social">
+            <a href="https://www.instagram.com/?hl=fr" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://fr-fr.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+        </div><!--fin id social-->
+
+        <div id="clear"></div>
+    </header>
+    <nav>
+        <div class="ancreNav">
+            <a href="index.html" title="accueil">Accueil</a>
+            <a href="texte.html" title="texte">Texte</a>
+            <a href="sélecteur.htlm" title="sélecteur">Sélecteur</a>
+            <a href="image.html" title="image">Image</a>
+            <a href="position.html" title="position">Position</a>
+            <a href="zoning.html" title="zoning">Zoning</a>
+            <a href="tableau.html" title="tableau">Tableau</a>
+            <a href="liste.html" title="liste">Liste</a>
+            <a href="liens_menu.html" title="liens">Liens</a>
+            <a href="formulaire.html" title="formulaire">Formulaire</a>
+            <a href="multimedia.html" title="multimedia"class="activ">Multimédia</a>
+            <a href="animation.html" title="animation">Animation</a>
+            <a href="recap.html" title="recap">Récapitulatif</a>
+        </div>
+    </nav>
+    <main>
+        <h2>Multimedia - <i class="fas fa-film"></i></h2>
+        
+        <section class="videoFond">
+            <h3>Une vidéo en fond</h3>
+            <div class="videoTexte">
+                <!-- Le navigateur va par defaut, le plus souvent, bloquer les contenus audio et vidéo  -->
+                <!-- Voilà pourquoi il est préférable de mettre les outils de lecture de stop etc. La barre de contrôle de la vidéo  -->
+                <video autoplay loop controls>
+                    <!-- Muted dans les attribus de l'élément vidéo est un moyen de contourner le non lancement de la vidéo, mais elle est muet  -->
+                    <source src="video/videoBackground.mp4" type="video/mp4">
+                </video>
+             <p>Une vidéo en noir & blanc</p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Une vidéo intégrée depuis youtube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Gcqu2V5lBZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="audio">
+            <h3>Audios, les sons</h3>
+            <h4>Format .mp3</h4>
+            <br>
+            <audio src="audio/sf_ambi_oiseaux_campagne_01.mp3" controls></audio>
+
+            <h4>Format Ogg</h4>
+            <br>
+            <audio src="audio/son.ogg"controls></audio>
+            <p>Votre navigateur ne prend pas en charge la balise audio</p>
+            <br>
+            <audio src="audio/son.ogg"controls autoplay></audio>
+            <hr>
+            <audio control>
+                <source src="audio/son.ogg" type="audio/ogg">
+                <source src="audio/son.mp3" type="audio/mpeg">
+            </audio>
+
+        </section>
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, necessitatibus mollitia itaque modi neque ipsum expedita amet natus sint nostrum tempore, ab, fugiat minima. Suscipit accusamus unde quos non similique.</p>
+    </footer>
+</body>
+</html>
