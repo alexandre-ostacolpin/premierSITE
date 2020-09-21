@@ -706,6 +706,34 @@ body {
 
 /* flexbox */
 
+.flex {
+	display: flex;
+	/* les div également réparties horizontalement  */
+	/* justify-content: space-between; */
+
+	/* les div avec un espace égal autour de chaque div */
+	/* justify-content: space-around; */
+
+	/* de haut en bas en mode colonne */
+	/* flex-direction: column; */
+
+	/* en mode colonne les div sont inversées */
+	/* flex-direction: column-reverse; */
+
+	flex-direction: row-reverse;
+}
+
+.flex div {
+	width: 150px;
+	height: 150px;
+	background: #984a59;
+	text-align: center;
+	font-size: 50px;
+	line-height: 150px;
+	color: #fff;
+	/* margin: 10px; */
+}
+
 
 
 /* La page des liens  */
@@ -900,7 +928,7 @@ body {
 
 	box-shadow: 0 0 20px black;
 	/* Cubic-bezier commence par 0, se termine par 1 et entre ces 2 valeurs nous mettons nos propres valeurs */
-	transition: .5 cubic-bezier(.,3,.4,1);
+	transition: .5 cubic-bezier(3,.4,1);
 	/* Pour la transition il faut le :hover  */
 }
 
@@ -969,4 +997,70 @@ iframe[allowfullscreen] {
 
 .audio {
 	text-align: center;
+}
+
+/* La page du Formulaire */
+
+form {
+	width: 60%;
+	margin: 0 auto;
+	padding: 15px;
+	background: #2d5c7f;
+	color: #d0e3fa;
+	border-radius: 20px;
+}
+
+label {
+	margin: 20px 10px;
+}
+
+form p {
+	margin: 10px;
+}
+
+textarea {
+	/* on interdit le redimensionnement du textarea */
+	resize: none;
+}
+
+label[for="orange"], label[for="fraise"], label[for="kiwi"], label[for="cerise"] {
+	background-color: red;
+	color: #fff;
+}
+
+/* La page du tableau */
+
+.tableau table {
+	border: 2px solid #205d67;
+	border-collapse: collapse;
+	margin: auto;
+	width: 80%;
+	padding: 5px;
+}
+
+.tableau td {
+	border: 2px solid #205d67;
+	padding: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.tableau thead, .tableau tfoot {
+	background: #d0e3fa;
+	border: 5px solid #6495ed;
+	text-align: left;
+}
+
+.tableau thead td, .tableau tfoot td {
+	text-align: center;
+}
+
+.tableau caption {
+	background: #d0e3fa;
+	border: 1px solid #6495ed;
+	height: 50px;
+	font-size: 25px;
+	text-align: left;
+	padding-left: 5px;
+	color: #6495ed;
 }

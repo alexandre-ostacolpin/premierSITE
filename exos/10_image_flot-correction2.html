@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image en float</title>
+    <style>
+        body {
+            background-color: #fff;
+        }
+        #conteneur {
+            background-color: bisque;
+            min-height: 500px;
+            margin: auto;
+            width: 600px;
+        }
+        main {
+            background-color: lightskyblue;
+            margin: auto;
+            width: 400px;  
+        }
+        .float-droite {
+            float: right;
+            margin-right: 0px;
+            margin-top: -40px;
+        }
+        .float-gauche {
+            margin-top: -45px;
+        }
+        .texte {
+            padding-left: 60px;
+            /* height: 40px; */
+        }
+/* :::::::::::::::::: correction n°2 :::::::::::::::::::::::::::: */
+        div#correction2 {
+            background-color: lightblue;
+            margin: 0 auto;
+            width: 400px;
+            min-height: fit-content;/* fit-content ne marche que si il y a pas de contenu de type text/ paragraphe */
+        }
+        .a_droite {
+            float: right;
+            width: 50px;
+            height: 50px;
+        }
+        .a_gauche {
+            float: left;
+            width: 50px;
+            height: 50px;
+        }
+      .clear {
+          clear: both;
+      }
+
+      @media (max-width: 600px) {
+          #conteneur {
+              width: 100%;
+              background: red;
+          }
+      }
+    </style>
+</head>
+<body>
+    <div id="conteneur">
+        <main>
+            <h1>Images Float</h1>
+            <h2>Faire flotter l'image à droite</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia error et adipisci corporis, autem consequuntur consectetur cupiditate facere veniam ducimus totam sit, molestiae ipsam voluptate facilis sapiente, voluptatibus neque cumque!</p>
+            <div class="float-droite">
+            <img src="../img/img/img/star.png" width="60" alt="Une étoile magnifique">
+            </div>
+            <h2>Faire flotter l'image à gauche</h2>
+            <div class="texte">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias, quidem molestiae modi nulla iure ipsa explicabo nesciunt qui sit, dignissimos facere ducimus praesentium consequatur odio ratione veniam, quibusdam reiciendis. </p>
+            </div>
+            <div class="float-gauche">
+            <img src="../img/img/img/star.png" width="60" alt="Une étoile magnifice">
+            </div>
+            <div class="clear"></div>
+        </main> <!-- fin de main -->
+        <div id="correction2"><!-- correction de Patrick -->
+            <h2>Images en float</h2>
+            <p>Faire flotter l'image à droite</p>
+            <p> <img src="../img/img/img/star.png" alt="une etoile" class="a_droite"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet repellendus, quaerat magnam accusamus possimus dignissimos? Ullam ad, at hic dolorum libero deleniti tenetur officiis ex voluptate doloribus repellat debitis?
+            </p>
+            <p>Faire flotter l'image à gauche: </p>
+            <p> <img src="../img/img/img/star.png" alt="une etoile" class="a_gauche"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, modi voluptates? Laboriosam, nostrum minima pariatur quaerat consectetur ipsam unde sequi reiciendis voluptate alias sit aliquid rerum voluptatum rem amet laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum reiciendis velit dolorem? Reprehenderit, voluptatibus doloremque similique fugit minima omnis optio eveniet odit perferendis aliquid, iure odio aspernatur ab ex. Natus.
+            </p>
+        </div> <!-- fin de correction2 -->
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

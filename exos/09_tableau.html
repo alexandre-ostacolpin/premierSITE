@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau HTML</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .tableau table {
+            border: 1px solid lightskyblue;
+            margin: auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        .tableau td {
+            border: 1px solid lightskyblue;
+            padding: 10px;
+
+        }
+        
+        .tableau caption {
+	        background: violet;
+	        border: 1px solid lightskyblue;
+            height: 40px;
+            line-height: 40px;
+            font-size: 1.5em;
+            /* text-align: center; */
+            /* padding-left: 15px;
+            padding-top: 15px; */
+        }
+
+        .violet {
+            background: violet;
+        }
+
+        .bleu-ciel {
+            background: lightskyblue;
+        }
+
+        /* tbody tr:nth-of-type(even) {
+            background-color: rgba(28, 95, 201, 0.829);
+        } */
+    </style>
+</head>
+<body>
+    <h1>Tableau HTML</h1>
+    <section class="tableau">
+        <table>
+            <caption>Adresse // Fournisseurs</caption>
+                <tr class="violet">
+                    <td>Cie</td>
+                    <td>Contact</td>
+                    <td>Pays</td>
+                </tr>
+            <tr>
+                <td>Le pain des amis</td>
+                <td>Maria Duroc</td>
+                <td>France</td>
+            </tr>
+            <tr class="bleu-ciel">
+                <td>Los vinos buenos</td>
+                <td>François Duparc</td>
+                <td>Espagne</td>
+            </tr>
+            <tr>
+                <td>Kangoroo and cie</td>
+                <td>Roland Mendel</td>
+                <td>Australie</td>
+            </tr>
+            <tr class="bleu-ciel">
+                <td>Twinnings</td>
+                <td>Helen Spike</td>
+                <td>Royaume-Uni</td>
+            </tr>
+            <tr>
+                <td>Cycles Laurent</td>
+                <td>Pierre Laurent</td>
+                <td>France</td>
+            </tr>
+            <tr class="bleu-ciel">
+                <td>Santini</td>
+                <td>Nanni Moretti</td>
+                <td>Italie</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>

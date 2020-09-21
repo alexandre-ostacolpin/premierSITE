@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau HTML</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        /* les styles pour le tableau */
+        table.solution {
+            margin: auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+        .solution caption {
+            background-color:lightblue;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.5em;
+            color: #fff;
+        }
+        .solution thead {
+            background-color:rgba(28, 152, 194, 0.993);
+            font-weight: bold;
+        }
+        .solution td {
+            border: 1px solid rgba(28, 152, 194, 0.993);
+            padding: 5px;
+            /* uniquement sur les td 
+            vertical-align: middle; */
+        }
+        /* .solution tbody tr:nth-of-type(even) {
+            background-color:rgba(95, 201, 236, 0.829);
+        } */
+        /* even = pair */
+        .solution tr:nth-child(even) {
+            background-color:rgba(95, 201, 236, 0.829);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tableau HTML</h1>
+    <table class="solution">
+        <caption>Adresses // fournisseurs</caption>
+        <thead>
+            <tr>
+                <td>Compagnies</td>
+                <td>Contacts</td>
+                <td>Pays</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Le pain des amis</td>
+                <td>Maria Duroc</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Los vinos buenos</td>
+                <td>François Duparc</td>
+                <td>Espagne</td>
+            </tr>
+            <tr>
+                <td>Kangoroo and Cie</td>
+                <td>Roland Mendel</td>
+                <td>Australie</td>
+            </tr>
+            <tr>
+                <td>Twinnings</td>
+                <td>Helen Spike</td>
+                <td>Royaume-Uni</td>
+            </tr>
+            <tr>
+                <td>Cycles Laurent</td>
+                <td>Pierre Laurent</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Santini</td>
+                <td>Nanni Moretti</td>
+                <td>Italie</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="solution">
+        <tr>
+            <th>Identifiant</th>
+            <td>Nom</td>
+            <td>Prénom</td>
+        </tr>
+        <tr>
+            <th>Numéro 1</th>
+            <td>Leo</td>
+            <td>Da Silva</td>
+        </tr>
+        <tr>
+            <th>Numéro 2</th>
+            <td>Sparks</td>
+            <td>denver</td>
+        </tr>
+        <tr>
+            <th>Numéro 3</th>
+            <td>Toto</td>
+            <td>Lolo</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mon premier site: Colombbus groupe de Suresnes">
+    <meta name="Keyword" content="html,css,Osta-Col-Pin,Alexandre,colombbus, suresmes, premier site">
+    <meta name="author" content="Alexandre Osta-Col-Pin">
+    <title>premierSITE - position</title>
+    <!-- LES TYPOS -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet">
+    <!-- Les icones embarquées depuis font awesome   -->
+    <script src="https://kit.fontawesome.com/8b6862ee94.js" crossorigin="anonymous"></script>
+    <!-- Les styles du premierSITE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#logo">
+                <button type="button"><i class="fas fa-arrow-circle-up"></i></button>
+            </a>
+            <img src="img/img/img/logo.png" alt="logo premier site">
+        </div><!--fin id logo-->
+
+        <div id="slogan">
+            <a href="index.html" title="Mon premier site en HTML accueil">
+                <h1>Mon premier site en HTML5 et CSS3</h1> 
+            </a>   
+        </div><!--fin id slogan-->
+
+        <div id="social">
+            <a href="https://www.instagram.com/?hl=fr" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://fr-fr.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+        </div><!--fin id social-->
+
+        <div id="clear"></div>
+    </header>
+    <nav>
+        <div class="ancreNav">
+            <a href="index.html" title="accueil">Accueil</a>
+            <a href="texte.html" title="texte">Texte</a>
+            <a href="sélecteur.htlm" title="sélecteur">Sélecteur</a>
+            <a href="image.html" title="image">Image</a>
+            <a href="position.html" title="position">Position</a>
+            <a href="zoning.html" title="zoning">Zoning</a>
+            <a href="tableau.html" title="tableau" class="activ">Tableau</a>
+            <a href="liste.html" title="liste">Liste</a>
+            <a href="liens_menu.html" title="liens">Liens</a>
+            <a href="formulaire.html" title="formulaire">Formulaire</a>
+            <a href="multimedia.html" title="multimedia">Multimédia</a>
+            <a href="animation.html" title="animation">Animation</a>
+            <a href="recap.html" title="recap">Récapitulatif</a>
+        </div>
+    </nav>
+    <main>
+        <h2>Tableau <i class="fab fa-wpforms"></i></h2>
+
+        <section class="tableau">
+
+            <table>
+                <caption><i class="fas fa-plane"></i> Vols /// Paris -> Rome</caption>
+                <!-- tr*5>td*4{1} -->
+                <thead>
+                    <tr>
+                        <td>Dates</td>
+                        <td>15/09/2020</td>
+                        <td>17/09/2020</td>
+                        <td>20/09/2020</td>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>Dates</td>
+                        <td>15/09/2020</td>
+                        <td>17/09/2020</td>
+                        <td>20/09/2020</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Air France</td>
+                        <td>10 H - Arrivé à 12 H </td>
+                        <td>20 H - Arrivé à 22 H </td>
+                        <td>22 H - Arrivé à minuit </td>
+                    </tr>
+                    <tr>
+                        <!-- <td>1</td> -->
+                        <td>200 €</td>
+                        <td>170 €</td>
+                        <td>80 €</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">AlitaliDépart</td>
+                        <td>Départ 6 H - Arrivé 8 H 30 </td>
+                        <td>Départ 13 H - Arrivé 15 H </td>
+                        <td>Départ 24 H - Arrivé 23H </td>
+                    </tr>
+                    <tr>
+                        <!-- <td>1</td> -->
+                        <td>150 €</td>
+                        <td>160 €</td>
+                        <td>150 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
