@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélecteur CSS</title>
+    <style>
+
+        /* 1- L'astérisque cible tous les éléments de la page on peut éqalement cibler tous les sélecteurs enfants d'un élément
+        ex. : 
+        
+        #container * {
+            border : 1px solid black;
+        } 
+        */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* 2- le symbole dièse pour cibler un élément pas son id  */
+
+        #container {
+            width: 962px;
+            margin: auto;
+            background-color: rgb(253, 246, 148);
+        }
+
+        /* 3- Le sélecteur de classe que l'on utilise plusieurs fois dans la même page  */
+
+        .error {
+            background-color: red;
+            color: white;
+        }
+
+        /* 4- Les sélecteurs descendants pour cibler les a dans les li et uniquement ceux là  */
+
+        li a {
+            text-decoration: none;
+        }
+
+        /* 5- Le sélecteur de type pour cibler tous les éléments d'une pages */
+
+        ul {
+            background-color: rgba(24, 231, 51, 0.243);
+            /* width: 500px; */
+        }
+
+        /* 6- Les pseudo-classe ex. :link tous les liens qui ne sont pas encore cliqués */
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        /* 7- Le sélecteur adjacent : il ne selectionne que l'élément qui est précédé par le premier élement ciblé, ici le p précédé d'une ul */
+
+        ul + p {
+            background-color: #fff;
+        }
+
+        /* 8- Le sélecteur d'enfant direct est très utile (surtout quand on fera du JS) */
+
+        div#listing > ul {
+            border: 5px solid red;
+            background-color: olive;
+        }
+
+        /* 9- Ce combinateur frère est proche de x + y mais moin strict en effet il cible TOUS les p qui sont précédés d'un h3 */
+
+        h3 ~ p {
+            text-transform: uppercase;
+        }
+
+        /* 10- le sélecteur d'attributs  */
+
+        a[title] {
+            background-color: black;
+            color: white;
+        }
+
+        /* 11- Toutes les balises a qui contiennent un lien vers https://www.lemonde.fr/ */
+
+        a[href='https://www.lemonde.fr/'] {
+            background-color: pink;
+        }
+
+        /* 12 La valeur qui suit l'étoile doit apparaître quelque part dans la valeur de l'attribut */
+
+        a[href*='mac'] {
+            background-color: tomato;
+            color: white;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Les sélecteurs CSS à connaître ...</h1>
+        <p>Il y a une <span class="error">erreure</span> dans cette phrase</p>
+        <p>Et dans celle-là <span class="error">aussie</span></p>
+        <hr>
+        <ul>
+            <li><a href="#">Rubrique 1</a></li>
+            <li><a href="#">Rubrique 2</a></li>
+            <li><a href="#" title="La rubrique 3 est la">Rubrique 3</a></li>
+            <li><a href="#">Rubrique 4</a></li>
+        </ul>
+        <hr>
+        <h3>coucou</h3>
+        <p>1/ Un lien vers le site de mon choix <a href="https://macbidouille.com/">cliquez ici</a></p>
+        <p>Et là un lien vers Mac Génération <a href="https://www.macg.co/">Mac Génération</a> </p>
+        <p>2/ Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolorum quis consequuntur voluptate ipsa voluptatum perspiciatis commodi enim, deleniti itaque nulla dignissimos minus esse, quaerat error recusandae facilis repellendus assumenda.</p>
+        <p>Et ici un lien vers le journal <a href="https://www.lemonde.fr/">Le monde</a> </p>
+        <hr>
+        <ul>
+            <li>Pain</li>
+            <li>Vin</li>
+            <li>Boursin</li>
+        </ul>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere assumenda optio nemo blanditiis labore possimus, rerum, saepe sunt veniam suscipit porro consequatur quam hic perspiciatis exercitationem deleniti dolor, quisquam nobis?</p>
+        <hr>
+
+        <div id="listing">
+            <ul>
+                <li>Afrique
+                    <ul>
+                        <li>Maroc</li>
+                        <li>Algérie</li>
+                    </ul>
+                </li>
+                <li>Amérique</li>
+                <li>Asie</li>
+                <li>Europe</li>
+                <li>Océanie</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
