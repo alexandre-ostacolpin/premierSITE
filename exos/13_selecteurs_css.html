@@ -88,12 +88,144 @@
             background-color: pink;
         }
 
-        /* 12 La valeur qui suit l'étoile doit apparaître quelque part dans la valeur de l'attribut */
+        /* 12- La valeur qui suit l'étoile doit apparaître quelque part dans la valeur de l'attribut, o nrecherche une chaine de caractères*/
 
         a[href*='mac'] {
             background-color: tomato;
             color: white;
             text-transform: uppercase;
+        }
+
+        /* 13-  */
+
+        /* 14-  */
+
+        /* 15-  */
+
+        /* 16- */
+
+        /* 17- Une pseudo classe pour cibler un élément d'interface utilisateur */
+
+        input[type=radio]:checked + label {
+            background-color: rgb(33, 221, 139);
+        }
+
+        /* 18-  */
+
+        /* 18- pseudo-classe d'action utilisateur : :hover */
+
+        a:hover {
+            border-bottom: 2px dashed red;
+            /* text-decoration: underline; */
+        }
+
+        /* 20- pseudo-classe de négation ; toute les div sauf #container */
+
+        div:not(#container) {
+            color: white;
+        }
+
+        /* 21- ELEMENT::first-line pseudo-éléments identifiés par "::" ;  */
+
+        /* p::first-line {
+            font-weight: bold;
+        } */
+
+        p#letterine::first-letter {
+            font-size: 2em;
+            float: left;
+            padding-right: 5px;
+        }
+
+        /* 22- La pseudo-classe ELEMENT:nth-child(n) */
+
+        #courses li:nth-child(2) {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* 23- pour sélectionner l'avant-dernier par exemple, ou pour sélectionner à partir du dernier */
+
+        #departements li:nth-last-child(2) {
+            background-color: #fff;
+        }
+
+        /* 24-  */
+
+        /* 25- */
+
+        /* 26- */
+
+        ul#departements li {
+            border-top: 1px solid purple;
+            border-bottom: 1px solid purple;
+            padding: 2px;
+            list-style-type: url("../img/img/img/star_02.png");
+        }
+
+        ul#departements li:first-child {
+            border-top: none;
+        }
+
+        /* 27- ELEMENT:last-child */
+
+        ul#courses li:last-child {
+            font-family: cursive;
+        }
+
+        ul#departements li:last-child {
+            border-bottom: none;
+        }
+
+        ul#mini-menu {
+            width: 200px;
+            background: rgb(131, 130, 130);
+            color: #fff;
+            list-style: none;
+            padding-left: 0;
+            margin: auto;
+        }
+
+        ul#mini-menu li {
+            padding: 10px;
+            border-bottom: 1px solid #000;
+            border-top: 1px solid #858585;
+        }
+
+        ul#mini-menu li:first-child {
+            border-top: none;
+        }
+
+        ul#mini-menu li:last-child {
+            border-bottom: none;
+        }
+
+        /* 28- ELEMENT:only-child */
+
+        article p:only-child {
+            color: orangered;
+        }
+
+        /* 29- ELEMENT:first-of-type */
+
+        article ul:first-of-type > li:nth-child(2) {
+            font-weight: bold;
+        }
+
+        p + ul li:last-child {
+            color: red;
+        }
+
+        article ul:first-of-type li:nth-last-child(1) {
+            font-size: 20px;
+        }
+
+        ol li {
+            list-style: upper-roman;
+        }
+
+        #sous-liste li {
+            list-style: lower-alpha;
         }
 
     </style>
@@ -121,12 +253,13 @@
             <li>Pain</li>
             <li>Vin</li>
             <li>Boursin</li>
+            <li>raisin</li>
         </ul>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere assumenda optio nemo blanditiis labore possimus, rerum, saepe sunt veniam suscipit porro consequatur quam hic perspiciatis exercitationem deleniti dolor, quisquam nobis?</p>
         <hr>
 
         <div id="listing">
-            <ul>
+            <ul id="courses">
                 <li>Afrique
                     <ul>
                         <li>Maroc</li>
@@ -139,6 +272,98 @@
                 <li>Océanie</li>
             </ul>
         </div>
+
+        <p id="letterine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nihil delectus veniam! Nostrum recusandae minus possimus, sit ducimus corporis tenetur modi quae quisquam iure nisi saepe tempore, harum quo.</p>
+        <hr>
+        <form action="#" method="POST">
+            <input type="radio" name="rad" value="bouton radio">
+            <label for="rad">bouton radio</label>
+        </form>
+
+        <hr>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid nisi iusto, enim, unde perferendis animi fuga molestiae necessitatibus illo illum molestias quae cupiditate reprehenderit exercitationem ipsam! Incidunt fugit quae optio?</p>
+
+        <h2>La lsite des départements français</h2>
+        <ul id="departements">
+            <li>01 - Ain - Bourg-en-bresse</li>
+            <li>02 - Aisne - Laon</li>        
+            <li>03 - Allier - Moulins</li>        
+            <li>04 - Alpes-de-Haute-Provence - Digne-les-bains</li>        
+            <li>05 - Hautes-alpes - Gap</li>        
+            <li>06 - Alpes-maritimes - Nice</li>        
+            <li>07 - Ardèche - Privas</li>        
+            <li>08 - Ardennes - Charleville-mézières</li>        
+            <li>09 - Ariège - Foix</li>        
+            <li>10 - Aube - Troyes</li>
+            <li>11 - Aude - Carcassonne</li>
+            <li>12 - Aveyron - Rodez</li>
+            <li>13 - Bouches-du-Rhône - Marseille</li>
+            <li>14 - Calvados - Caen</li>
+            <li>15 - Cantal - Aurillac</li>
+            <li>16 - Charente - Angoulême</li>
+            <li>17 - Charente-maritime - La rochelle</li>
+            <li>18 - Cher - Bourges</li>
+            <li>19 - Corrèze - Tulle</li>
+            <li>2A - Corse-du-sud - Ajaccio</li>
+            <li>2B - Haute-Corse - Bastia</li>
+            <li>21 - Côte-d'Or - Dijon</li>
+            <li>22 - Côtes-d'Armor - Saint-brieuc</li>
+            <li>23 - Creuse - Guéret</li>
+            <li>24 - Dordogne - Périgueux</li>
+            <li>25 - Doubs - Besançon</li>
+            <li>26 - Drôme - Valence</li>
+            <li>27 - Eure - Évreux</li>
+            <li>28 - Eure-et-loir - Chartres</li>
+            <li>29 - Finistère - Quimper</li>
+            <li>30 - Gard - Nîmes</li>
+            <li>31 - Haute-garonne - Toulouse</li>
+        </ul>
+
+        <hr>
+        <h2>Un mini menu</h2>
+        <ul id="mini-menu">
+            <li> List Item 1 </li>
+            <li> List Item 2 </li>
+            <li> List Item 3 </li>
+        </ul>
+        <hr>
+        <h2>Des paragraphes</h2>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates voluptas itaque fugiat vel eveniet placeat mollitia laborum quam porro adipisci non cum asperiores iure dolorum nemo, nulla error voluptatem aperiam.</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates voluptas itaque fugiat vel eveniet placeat mollitia laborum quam porro adipisci non cum asperiores iure dolorum nemo, nulla error voluptatem aperiam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nemo aliquam omnis atque, commodi deserunt quidem earum ut vero debitis, incidunt officia ipsa. Provident voluptates inventore consectetur, quidem iusto quisquam?</p>
+        </article>
+        <hr>
+        <h2>suite ...</h2>
+        <article>
+            <p> Mon paragraphe ici.</p>
+            <ul>
+                <li> Elément de liste 1 </li>
+                <li> Elément de liste 2 </li>
+            </ul>
+
+            <ul>
+                <li> Elément de liste 3 </li>
+                <li> Elément de liste 4 </li>
+            </ul>
+        </article>
+        <hr>
+        <ol>
+            <li>coucou 1</li>
+            <li>coucou 2</li>
+            <li>coucou 3</li>
+            <li>coucou 4</li>
+            <li>coucou 5</li>
+            <li>coucou 6</li>
+            <li>coucou 7</li>
+            <li>coucou 8</li>
+            <li>coucou 9</li>
+            <li>coucou 10</li>
+        </ol>
+        
+        <!-- Fin de container  -->
     </div>
 </body>
 </html>
